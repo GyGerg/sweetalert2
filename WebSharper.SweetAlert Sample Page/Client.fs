@@ -67,6 +67,7 @@ module Client =
         let btn1 = 
             Doc.Button "Click me!" [] (fun () ->
                 Alert1() |> ignore
+
             )
         let rResult = Var.Create ""
 

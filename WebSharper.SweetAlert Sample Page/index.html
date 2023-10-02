@@ -8,6 +8,7 @@
     <style>
         /* Don't show the not-yet-loaded templates */
         [ws-template], [ws-children-template] { display: none; }
+        
     </style>
     <script type="module" src="./Content/WebSharper.SweetAlert%20Sample%20Page.head.js"></script>
 </head>
@@ -15,6 +16,14 @@
     <h1>WebSharper.SweetAlert sample page</h1>
     <div id="main">
     </div>
+
+    <button popovertarget="my-popover" class="trigger">Open Popover</button>
+    <div id="my-popover" popover=manual>
+        <button class="close-btn" popovertarget="my-popover" popovertargetaction="hide">
+            <span>❌</span>
+        </button>
+    </div>
+
     <script type="module" src="./Content/WebSharper.SweetAlert%20Sample%20Page.js"></script>
 </body>
 </html>
